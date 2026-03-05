@@ -1,0 +1,28 @@
+approve:
+# Trường hợp không là contract ,nhưng đủ số tiền ủy quyền
+  - command_type: 'approve'
+    token_type: 'TB-Token'
+    approve_from_address_key: 2
+    approve_to_address_key: 3
+    amount_approve: 3
+    happy_case: True
+
+#  - command_type: 'approve'
+#    token_type: 'TB-Token'
+#    approve_from_address_key: 2
+#    approve_to_address_key: 3
+#    amount_approve: 2
+#    happy_case: False
+#
+#  - command_type: 'approve'
+#    token_type: 'TB-Token'
+#    approve_from_address_key: 2
+#    approve_to_address_key: 3
+#    amount_approve: 1
+#    happy_case: True
+
+
+
+
+
+

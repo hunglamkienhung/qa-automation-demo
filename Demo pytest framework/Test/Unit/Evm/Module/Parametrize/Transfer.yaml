@@ -1,0 +1,45 @@
+transfer:
+# Trường hợp là contract ,nhưng đủ tiền chuyển
+  - command_type: 'transfer'
+    token_type: 'TB-Token'
+    transfer_from_address_key: 0
+    transfer_to_address_key: 1
+    amount_transfer: 1
+    expected: 1
+    happy_case: True
+
+  - command_type: 'transfer'
+    token_type: 'TB-Token'
+    transfer_from_address_key: 0
+    transfer_to_address_key: 1
+    amount_transfer: 1
+    expected: 2
+    happy_case: True
+
+  - command_type: 'transfer'
+    token_type: 'TB-Token'
+    transfer_from_address_key: 1
+    transfer_to_address_key: 2
+    amount_transfer: 1
+    expected: 1
+    happy_case: True
+
+  - command_type: 'transfer'
+    token_type: 'TB-Token'
+    transfer_from_address_key: 1
+    transfer_to_address_key: 2
+    amount_transfer: 2
+    expected: 3
+    happy_case: False
+
+  - command_type: 'transfer'
+    token_type: 'TB-Token'
+    transfer_from_address_key: 1
+    transfer_to_address_key: 2
+    amount_transfer: 1
+    expected: 2
+    happy_case: True
+
+
+
+
